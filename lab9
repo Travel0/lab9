@@ -1,0 +1,4 @@
+#! /bin/bash
+
+array=( "$@" )
+echo "${array[@]/%/+}0" | bc
